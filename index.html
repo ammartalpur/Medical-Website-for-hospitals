@@ -283,7 +283,9 @@
                                 1-800-MEDICARE (TTY users should call <span class="tfn_number">+1-844-306-0195 </span>),
                                 24 hours a day/7 days a week). If your complaint involves a broker or agent, be sure to
                                 include the name of the person when filing your grievance.</p>
-                            <p class="text-xs md:text-xs sm:text-xs"><br>MULTI-PLAN_SQpbu8wiiq2024_C</p><br>
+                            <p class="text-xs md:text-xs sm:text-xs"><br>
+                            <p id="data"></p>
+                            </p><br>
                         </div>
                     </div>
                 </div>
@@ -294,6 +296,10 @@
     <script src="https://sa2.seniorangel.com/js/custom.js?v=1692340527"></script>
 
     <script type="text/javascript">
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        var x = document.getElementById("data");
+        x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
         (function (window) {
             var _rgba_scripts = document.getElementsByTagName('script');
             window._rgba = window._rgba || {
