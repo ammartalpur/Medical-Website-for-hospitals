@@ -1,0 +1,94 @@
+
+    @media (min-width:767px){
+        .custom-width-desktop h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+        .custom-width-desktop {
+	width: 400px;
+}
+    }   
+    @media (max-width:767px){
+        .custom-width-desktop {
+	width: 200px;
+}
+        .three-column {
+	flex-wrap: wrap;
+            margin-bottom: 0;
+}
+        .three-column a {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 0px;
+}
+    }
+.fixed-footer {
+	padding: 0.75rem 0;
+	position: fixed;
+	bottom: 0;
+	background-color: #eee;
+	z-index: 2;
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.fixed-footer .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.fixed-footer .container h3 {
+	font-size: clamp(18px, calc(5.6004618938px + 1.6166281755vw ), 25px);
+	width: max-content;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.call-to-action.cta-container {
+	text-align: center;
+}
+.btn.btn-yellow {
+	box-shadow: 0 0 0 0 #FD1212;
+	background: #FD1212;
+	border-radius: 50px;
+	border: 2px solid transparent;
+	color: #fff !important;
+	font-size: clamp(15px, calc(11.3422818792px + 0.6711409396vw ), 18px) !important;
+	animation: pulsered 2s infinite;
+	padding: 9px 32px;
+	text-decoration: none;
+	font-family: "Helvetica Neue", sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    line-height: 28px;
+    font-weight: bold;
+}
+.fixed-footer .container::before, .fixed-footer .container::after {
+	display: none;
+}
+body {
+	padding-bottom: 85px;
+}
+.call-to-action.cta-container a {
+	display: block;
+	margin: 0;
+}
+.fixed-footer .container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.cta-container .cta-title {
+	color: #414141;
+	font-size: 18px;
+	font-weight: 700;
+}
+.cta-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.3333rem;
+}
+    @media (max-width:767px){
+        .cta-container .cta-title {font-size: 13px;}
+        .fixed-footer .container h3 {display: none;}
+        .call-to-action.cta-container, .call-to-action.cta-container a {width: 100%;}
+        .fixed-footer .container{padding: 0 15px;}
+    }

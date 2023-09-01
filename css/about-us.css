@@ -1,0 +1,17 @@
+
+
+.about-details {
+  max-width: 870px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-details img {
+  display: inline-block;
+  max-width: 100%;
+  width: 300px;
+  margin-bottom: 30px;
+}
+.about-details h2 {
+  font-weight: normal;
+}
+
